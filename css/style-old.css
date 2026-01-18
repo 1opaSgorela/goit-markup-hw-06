@@ -1,12 +1,12 @@
 
-.footer-page {
+/* .footer-page {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
     background-color: #2E2F42;
-}
+} */
 
-.footer-logo-head {
+/* .footer-logo-head {
     display: inline-block;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
@@ -20,33 +20,31 @@
 
 .footer-logo-text {
     color: #f4f4fd;
-}
+} */
 
-.footer-paragraph-text {
+/* .footer-paragraph-text {
     color: #FFFFFF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
     max-width: 264px;
-}
+} */
 
-.content-footer {
+/* .content-footer {
     display: flex;
     width: 1158px;
-    margin: 0 auto;
     padding: 0 15px;
     align-items: baseline;
     justify-content: space-between;
-}
-
-.social-media-block {
+} */
+/* .logo-block {
+    margin-right: 120px;
+} */
+/* .social-media-block {
     display: flex;
     flex-direction: column;
-   
 }
-.logo-block{
-    margin-right: 120px;
-}
+
 .social-text {
     font-weight: 500;
     font-size: 16px;
@@ -54,9 +52,9 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-}
+} */
 
-.social-list-footer {
+/* .social-list-footer {
     display: flex;
     gap: 16px;
     list-style: none;
@@ -87,7 +85,7 @@
 
 .social-icon {
     fill: #f4f4fd;
-}
+} */
 .overlay-modal{
     background-color: rgba(46, 47, 66, 0.4);
     
@@ -258,7 +256,7 @@
     color: #4d5ae5;
     text-decoration: underline;
 }
-.sub-p{
+/* .sub-p{
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -266,7 +264,7 @@
     letter-spacing: 0.02em;
     color: #ffffff;
 
-}
+} */
 .txtarea{
     margin-bottom: 16px
 }
@@ -275,7 +273,7 @@
     gap: 24px;
 }
 
-.input-sub{
+/* .input-sub{
     width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
@@ -288,11 +286,11 @@
     border-radius: 4px;
     color: #ffffff;
     outline: transparent;
-}
-.input-sub::placeholder{
+} */
+/* .input-sub::placeholder{
     color: #ffffff;
-}
-.btn-sub{
+} */
+/* .btn-sub{
     min-width: 165px;
     height: 40px;
     display: flex;
@@ -320,7 +318,7 @@
 }
 .btn-sub-icon{
     margin-left: 16px;
-}
+} */
 
 
 
