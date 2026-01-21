@@ -235,12 +235,15 @@ a {
         visibility: hidden;
         pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateX(100%);
     }
 
         .mobile-menu.is-open {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
+            transform: translateX(0);
+            transition: transform 400ms ease-in;
         }
 
         .mobile-menu-container{
@@ -952,7 +955,6 @@ a {
     gap: 120px;
 }
 .footer-page{
-    display: flex;
     flex-direction: row;
     padding: 100px 0;
     justify-content: space-between;
@@ -1221,11 +1223,7 @@ input[type="checkbox"]:checked+label .span-user-privacy {
 }
 
 @media screen and (min-width: 1158px) {
-.modal{
-    width: 408px;
-    min-height: 584px;
-    padding: 72px 24px 24px 24px;
-}
+
 .form-input{
     padding-left: 38px;
 }
