@@ -7,15 +7,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
 
-    <title>goit-markup-hw-02</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>goit-markup-hw-06</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -47,108 +50,21 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
-        <div class="mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
-            <svg class="mobile-menu-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-
-          <nav class="mobile-menu-nav">
-            <ul>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link current" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./index.html">Portfolio</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./index.html">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="mobile-menu-address">
-            <ul>
-              <li class="mobile-menu-address-list">
-                <a
-                  class="mobile-menu-address-link current"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-              <li class="mobile-menu-address-list">
-                <a
-                  class="mobile-menu-address-link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <ul class="mobile-menu-social-links">
-            <li class="mobile-menu-links-link">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="mobile-link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-links-link">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                class="mobile-link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-links-link">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="mobile-link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-menu-links-link">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="mobile-link"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
     <main>
       <!-- HERO -->
       <section class="big-banner">
-        <div class="big-banner-container">
+        <div class="container">
           <h1 class="big-banner-text">Effective Solutions for Your Business</h1>
-          <button type="button" class="big-banner-btn">Order Service</button>
+          <button type="button" class="big-banner-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -210,7 +126,7 @@
       </section>
 
       <!-- Our Team -->
-      <section class="section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-card-wrap">
@@ -640,7 +556,7 @@
 
     <!-- FOOTER -->
     <footer class="footer-page">
-      <div class="content-footer">
+      <div class="container content-footer">
         <div class="footer-logo-social">
           <div class="logo-block">
             <a href="./index.html" class="footer-logo-head">
@@ -726,9 +642,9 @@
     </footer>
 
     <!--MODAL-->
-    <div class="overlay-modal">
+    <div class="overlay-modal" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -755,7 +671,7 @@
             <div class="input-svg">
               <input
                 class="form-input"
-                type="text"
+                type="tel"
                 name="user-phone"
                 id="user-phone"
               />
@@ -770,7 +686,7 @@
             <div class="input-svg">
               <input
                 class="form-input"
-                type="text"
+                type="email"
                 name="user-mail"
                 id="user-mail"
               />
@@ -813,6 +729,91 @@
 
           <button class="form-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button" data-menu-close>
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-address">
+          <ul>
+            <li class="mobile-menu-address-list">
+              <a
+                class="mobile-menu-address-link current"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-address-list">
+              <a
+                class="mobile-menu-address-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-links">
+          <li class="mobile-menu-links-link">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="mobile-link"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-links-link">
+            <a href="https://twitter.com/" target="_blank" class="mobile-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-links-link">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="mobile-link"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-links-link">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="mobile-link"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
