@@ -727,7 +727,24 @@ display: flex;
 }
 
 .overlay-content {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.our-portfolio-card:hover .overlay-content {
+    transform: translateY(0%);
 }
 
 .our-portfolio-card {
@@ -777,27 +794,6 @@ display: flex;
         width: calc((100% - 48px) / 3);
     }
 
-    .overlay-content {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 40px 32px;
-        background-color: #4d5ae5;
-        color: #f4f4fd;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
-
-    .our-portfolio-card:hover .overlay-content {
-        transform: translateY(0%);
-    }
 }
 
 
