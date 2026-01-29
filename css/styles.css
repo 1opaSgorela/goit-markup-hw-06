@@ -548,7 +548,7 @@ a {
 @media screen and (min-width: 768px) {
     .our-goals {
         display: flex;
-        gap: 24px;
+        gap: 72px 24px;
         flex-wrap: wrap;
     }
 
@@ -760,12 +760,10 @@ display: flex;
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 0;
 }
 .our-portfolio-card:hover .overlay-content {
     transform: translateY(0%);
-}
-
-.our-portfolio-card {
 }
 
 .our-portfolio-card-content {
@@ -1003,8 +1001,12 @@ display: flex;
     .logo-block{
         text-align: left;
     }
-    .footer-logo-social {
+    .footer-logo-social-tablet{
         display: flex;
+        gap: 24px;
+    }
+    .footer-logo-social {
+        display: block;
         gap: 24px;
     }
 
@@ -1020,7 +1022,7 @@ display: flex;
         align-items: baseline;
         max-width: 1158px;
         padding: 0 15px;
-        gap: 120px;
+        margin: 0 auto
     }
 
     .footer-page {
@@ -1032,6 +1034,7 @@ display: flex;
     .logo-block {
         text-align: start;
         margin-bottom: 0;
+        
     }
 
     .footer-paragraph-text {
@@ -1046,10 +1049,19 @@ display: flex;
         width: 264px;
         margin-bottom: 0;
     }
-
-    .footer-logo-social {
+       .footer-logo-social-tablet{
+        display: flex;
         gap: 120px;
     }
+    .footer-logo-social {
+        display: flex;
+            margin-left: auto;
+    }
+    .social-media-block{
+        display: block;
+    }
+   
+    
 }
 
 /* modal */
@@ -1167,7 +1179,7 @@ display: flex;
     padding-left: 34px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 4px;
+    /* margin-top: 4px; */
 }
 
 .form-input:focus {
@@ -1203,6 +1215,12 @@ display: flex;
     margin-top: 4px;
 }
 
+.form-textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
 .form-textarea:focus {
     border-color: #4d5ae5;
 }
